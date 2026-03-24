@@ -1,0 +1,103 @@
+{
+    "stoklar": {
+        "Muhabbet Kuşu Yemi (kg)": 10.5,
+        "Jako Özel Karışım (kg)": 5.0,
+        "Kanarya Melodisi Yemi (kg)": 7.2,
+        "Kuş Kumu (paket)": 15,
+        "Gaga Taşı (adet)": 20
+    },
+    "giderler": [],
+    "aksesuarlar": {
+        "Pirinç Kafes (Büyük)": {
+            "stok": 5,
+            "fiyat": 450
+        },
+        "Ahşap Tünek (3'lü set)": {
+            "stok": 12,
+            "fiyat": 85
+        },
+        "Gaga Taşı (Mineralli)": {
+            "stok": 25,
+            "fiyat": 30
+        },
+        "Akıllı Suluk (Büyük)": {
+            "stok": 15,
+            "fiyat": 65
+        },
+        "Jako Oyuncağı (Zekâ geliştirici)": {
+            "stok": 3,
+            "fiyat": 220
+        }
+    },
+    "resmi_giderler": [
+        {
+            "tarih": "2026-03-24 12:04:02",
+            "kategori": "Belediye Ruhsat Harcı",
+            "tutar": 1500.0,
+            "evrak_no": "BEL-2024-001"
+        },
+        {
+            "tarih": "2026-03-24 12:04:02",
+            "kategori": "Veteriner Sağlık Onayı",
+            "tutar": 850.0,
+            "evrak_no": "VET-KARNE-JAKO"
+        },
+        {
+            "tarih": "2026-03-24 12:04:02",
+            "kategori": "KDV Ödemesi",
+            "tutar": 2200.0,
+            "evrak_no": "MAL-TAH-2024"
+        }
+    ],
+    "sarf_malzemeler": {
+        "Kalamar Kemiği (Büyük)": {
+            "adet": 30,
+            "fiyat": 15.0
+        },
+        "Gaga Taşı (Mineralli)": {
+            "adet": 50,
+            "fiyat": 20.0
+        },
+        "Otomatik Suluk (Şeffaf)": {
+            "adet": 20,
+            "fiyat": 45.0
+        },
+        "Akıllı Yemlik (Dökülmez)": {
+            "adet": 15,
+            "fiyat": 75.0
+        },
+        "Test Urun": {
+            "adet": 13.0,
+            "fiyat": 5.0
+        }
+    },
+    "saglik_urunleri": {
+        "B-Vitamini Kompleksi": {
+            "miktar": 10,
+            "skt": "2024-12-31"
+        },
+        "Kalsiyum Destekli Kum": {
+            "miktar": 20,
+            "skt": "2024-04-15"
+        }
+    },
+    "imha_kayitlari": [
+        {
+            "tarih": "2026-03-24 12:09",
+            "urun": "Tüy Dökümü Engelleyici",
+            "miktar": 15,
+            "sebep": "SKT Geçtiği İçin İmha Edildi"
+        }
+    ],
+    "sevkiyat_urunleri": {
+        "Şeffaf Taşıma Çantası (L)": {
+            "adet": 10,
+            "fiyat": 350.0
+        },
+        "Ahşap Kanarya Folluğu": {
+            "adet": 25,
+            "fiyat": 45.0
+        }
+    },
+    "musteriler": []
+}
