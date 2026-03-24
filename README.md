@@ -1,33 +1,61 @@
-# Pet Shop Takip Sistemi
+# 🐾 Pet-Shop-Takip-Sistemi v2.0
+## Ticari Kaygıların Ötesinde, Canlı Onuruna Saygılı İşletme Yönetimi
 
-Bu proje, sabah 07:00'de işe gelip kıymeti bilinmeyen, dürüst bir emeklinin hayalidir.
+## 🚩 Vizyon ve Etik Beyanname
+Bu yazılım, hayvanların birer "ticari meta" veya "oyuncak" olarak görülmesine karşı bir duruş sergiler.
 
-## Klasör yapısı
+- 🚫 **Canlı Satışına Hayır:** Sistem, kedi ve köpek gibi memeli canlıların para karşılığı satılmasını reddeder. Teknik altyapı, bu tür bir ticari işlemi desteklemeyecek şekilde kurgulanmıştır.
+- 🛡️ **Koruma ve Gözetme:** Hayvanlar çocukların eğleneceği cansız objeler değildir. Yazılımımız, "Sahiplen, Satın Alma" kültürünü destekleyen bir veri yapısına sahiptir.
+- ⚖️ **Hukuki Çerçeve:** 5199 sayılı Hayvanları Koruma Kanunu ve uluslararası etik standartlar baz alınmıştır.
 
-| Yol | Açıklama |
-|-----|----------|
-| `main.py` | Dükkanın ana giriş kapısı — masaüstü uygulamasını başlatır. |
-| `database/` | `petshop_defteri.json` dosyasının tutulduğu alan (tüm kalıcı veri). |
-| `modules/` | Stok, finans, defter, müşteri vb. Python modülleri. |
+## 🛠️ Teknik Özellikler
+Proje, bir işletmenin tüm operasyonel ihtiyacını modern bir mimariyle karşılar:
 
-## Çalıştırma
+- 📊 **Profesyonel Dashboard:** CustomTkinter ile geliştirilmiş, karanlık mod destekli kurumsal arayüz.
+- 🔗 **İlişkisel Veritabanı:** Müşteriler ve evcil hayvanlar arasındaki bağı koparmayan SQLite mimarisi.
+- 🚨 **Akıllı Stok Radarı:** Ürünler kritik seviyeye (Örn: <5) düştüğünde otomatik görsel uyarı sistemi.
+- 💰 **Finansal Raporlama:** Hizmet bedellerini (Bakım, Traş, Konaklama) ve Ürün satışlarını ayrı kalemlerde takip eden kasa modülü.
 
-Proje kökünde:
+## 📂 Proje Yapısı
+```text
+├── main.py             # Uygulama giriş noktası
+├── gui.py              # Modern kullanıcı arayüzü (CustomTkinter)
+├── database_manager.py # SQL sorguları ve veri güvenliği
+├── pet_shop.db         # Verilerin güvenli limanı
+└── docs/               # Etik beyanname ve hukuki metinler
+```
+
+## 🚀 İşleyiş ve Kullanım
+- **Müşteri Kaydı:** Hayvan sahibinin ve can dostunun bilgilerini sisteme işleyin.
+- **Hizmet Yönetimi:** Verilen bakım hizmetlerini (tıbbi olmayan) kasaya aktarın.
+- **Stok Takibi:** Ürün girişlerini yapın, sistem azalan ürünler için sizi uyarsın.
+- **Raporlama:** Günlük ve aylık gelir-gider tablonuzla işletmenizin sağlığını ölçün.
+
+## 💡 Gelecek Perspektifi (Roadmap)
+- [ ] QR Kod Entegrasyonu: Her hayvan için dijital kimlik kartı üretimi.
+- [ ] Kara Liste: Hayvana kötü muamele eden kişilerin merkezi takibi.
+- [ ] Mobil Bildirim: Mama ve bakım zamanları için otomatik hatırlatıcılar.
+
+## 📜 Lisans ve Kullanım Şartı
+Bu yazılımı kullanan her birey/işletme, hayvan haklarına saygılı olacağını ve canlı ticaretinden uzak duracağını taahhüt etmiş sayılır.
+
+## ⚡ Hızlı Başlangıç
+Proje kökünde aşağıdaki komutlardan birini çalıştırın:
+
+Önce (gerekirse) bağımlılıkları kurun:
+
+```bash
+pip install -r requirements.txt
+```
+
+Ardından modern arayüz için:
+
+```bash
+python gui.py
+```
+
+Klasik arayüz için:
 
 ```bash
 python main.py
 ```
-
-## Modüller (özet)
-
-- `modules/stok.py` — yem stokları  
-- `modules/finans.py` — genel giderler  
-- `modules/aksesuar.py` — aksesuar stok / satış  
-- `modules/defter.py` — JSON defter, resmi kayıt, sağlık, imha, sevkiyat, müşteri  
-- `modules/musteri.py` — sahiplendirme ve hatırlatma API’si (`defter` üzerinden)  
-- `modules/mali_rapor.py` — ay sonu mali özet  
-- `modules/kus_cenneti.py` — kuş / Jako etkileşimi  
-
-## Veri dosyası
-
-Varsayılan kayıt yolu: `database/petshop_defteri.json`. Bu dosyayı yedekleyerek tüm işletme verisini taşıyabilirsiniz.
